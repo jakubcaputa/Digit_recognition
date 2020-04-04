@@ -61,12 +61,12 @@ def create_jpg_image():
         clock.tick(240)
 
 
-    print(arrayData)
+    # print(arrayData)
     Image.fromarray(arrayData).convert('RGB').resize((28, 28)).save('data.jpg')
     #b = Image.fromarray(arrayData).convert('RGB').resize((28, 28))
 
     #matplotlib.pyplot.imsave('name.png', arrayData)
-    plt.imsave(fname='name2.jpg', arr=arrayData, cmap=plt.get_cmap('gray'))
+    # plt.imsave(fname='name2.jpg', arr=arrayData, cmap=plt.get_cmap('gray'))
 
 
 

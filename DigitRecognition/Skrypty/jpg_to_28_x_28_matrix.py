@@ -8,7 +8,7 @@ from tkinter import messagebox
 
 
 # fin = np.array()
-path = "D:\PythonProjekty\DigitRecognition\Skrypty\data.jpg"
+path = "D:\PythonProjekty\Digit_recognition\DigitRecognition\Skrypty\data.jpg"
 
 
 def clean_arr(ar):
@@ -49,14 +49,15 @@ def print_result_of_prediction(a):
     ans = ""
     ans = messagebox.askquestion('Question', f'Did you draw {a} ?')
 
-    """"
     if ans =='yes':
         messagebox.showinfo('PopUp', 'No to zajebiscie')
+        point = 1
     if ans =='no':
         messagebox.showinfo('PopUp', 'Chujowo rysujesz')
-    else:
-        pass
-    """
+        point = 0
+    return point
+
+
 if __name__ == '__main__':
     temp = return_bit_arr()
     print(type(temp))
